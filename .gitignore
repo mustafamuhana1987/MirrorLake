@@ -1,0 +1,10 @@
+node_modules/
+source-content/
+original-home.html
+collect*.cjs
+create-amenities.cjs
+refine-about.cjs
+update-about.cjs
+*.log
+.DS_Store
+Thumbs.db

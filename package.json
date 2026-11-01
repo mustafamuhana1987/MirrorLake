@@ -1,0 +1,1 @@
+{"name":"mirror-lake-retreat","private":true,"version":"1.0.0","scripts":{"start":"node server.cjs","build":"node check.cjs"}}
