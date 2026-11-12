@@ -101,37 +101,40 @@
 
 /* About Us */
 .about-landing {
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
-  width: min(94%, 1440px);
-  margin: 20px auto 0;
-  overflow: hidden;
-  border-radius: 22px;
-  background: #153e34;
-  color: #faf8ee;
+  place-items: center;
+  width: min(100%, 1440px);
+  min-height: clamp(310px, 43vw, 580px);
+  margin: 0 auto;
+  color: #fffef9;
 }
 .about-landing-copy {
-  display: grid;
-  align-content: center;
-  justify-items: start;
-  padding: clamp(26px, 5vw, 76px);
+  padding: 44px 8%;
+  text-align: center;
 }
 .about-landing h1 {
+  margin: 0;
+  max-width: 15ch;
   font-family: Georgia, serif;
-  font-size: clamp(2.65rem, 5.3vw, 5.1rem);
+  font-size: clamp(2.5rem, 6vw, 5.1rem);
   letter-spacing: -.045em;
-  line-height: 1.04;
+  line-height: 1.08;
   text-wrap: balance;
-  margin: 0 0 30px;
+  text-shadow: 0 2px 16px #09271f;
 }
 .about-landing img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   height: 100%;
-  min-height: 430px;
-  object-position: 38% center;
-}
-.about-landing .button {
-  gap: 14px;
-  font-size: .94rem;
+  object-position: 42% center;
+  filter: brightness(.55);
+  -webkit-mask-image: radial-gradient(ellipse closest-side, #000 72%, transparent 100%), linear-gradient(to bottom, transparent, #000 12%, #000 75%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 10%, #000 76%, transparent);
+  mask-composite: intersect;
 }
 .about-mission-panel {
   display: grid;
@@ -181,18 +184,33 @@
   margin-bottom: 0;
 }
 @media (max-width: 760px) {
-  .about-landing,
   .about-mission-panel {
     grid-template-columns: minmax(0, 1fr);
   }
-  .about-landing img {
-    min-height: 0;
-    height: clamp(190px, 48vw, 340px);
-  }
-  .about-landing h1 {
-    margin-bottom: 22px;
-  }
-  .about-landing .button {
-    padding-inline: 17px;
-  }
+}
+.about-policy {
+  margin-bottom: 24px;
+}
+.about-faith {
+  width: min(90%, 900px);
+  margin: 0 auto clamp(42px, 7vw, 90px);
+  padding: clamp(24px, 4vw, 44px);
+  background: #eaf0e3;
+  border: 1px solid #dce5d8;
+  border-radius: 18px;
+}
+.about-faith h2 {
+  margin: 0 0 12px;
+  font: 500 clamp(1.65rem, 3vw, 2.2rem)/1.2 Georgia, serif;
+}
+.about-faith a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: #173e34;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
