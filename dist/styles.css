@@ -215,13 +215,10 @@
   text-underline-offset: 4px;
 }
 
-.about-faith-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 24px;
+.about-faith:has(+ .about-denomination) {
+  margin-bottom: 24px;
 }
-.about-faith-links .button {
+.about-denomination .button {
   color: #fffef9;
   text-decoration: none;
 }
