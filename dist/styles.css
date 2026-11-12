@@ -129,7 +129,7 @@
   inset: 0;
   z-index: -1;
   height: 100%;
-  object-position: 42% center;
+  object-position: center 33%;
   filter: brightness(.55);
   -webkit-mask-image: radial-gradient(ellipse closest-side, #000 72%, transparent 100%), linear-gradient(to bottom, transparent, #000 12%, #000 75%, transparent);
   -webkit-mask-composite: source-in;
