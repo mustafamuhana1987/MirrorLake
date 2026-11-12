@@ -53,12 +53,12 @@
 }
 
 .hero:has(.management-announcement) .hero-content {
-  grid-template-columns: minmax(0, 1fr);
-  justify-items: center;
-  text-align: center;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  text-align: left;
 }
 .hero:has(.management-announcement) .hero-content h1 {
-  margin-inline: auto;
+  margin: 0;
 }
 .hero-cross {
   display: inline-block;
@@ -67,7 +67,16 @@
   vertical-align: .22em;
 }
 .hero:has(.management-announcement) .hero-actions {
-  justify-content: center;
+  justify-content: flex-end;
+}
+@media (max-width: 900px) {
+  .hero:has(.management-announcement) .hero-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero:has(.management-announcement) .hero-actions {
+    justify-content: flex-start;
+    margin-top: 24px;
+  }
 }
 .hero-actions .hero-secondary {
   display: inline-flex;
