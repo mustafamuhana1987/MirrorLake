@@ -99,20 +99,100 @@
   }
 }
 
-.about-policy {
-  max-width: 1050px;
+/* About Us */
+.about-landing {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+  width: min(94%, 1440px);
+  margin: 20px auto 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #153e34;
+  color: #faf8ee;
 }
-.about-policy h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+.about-landing-copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding: clamp(26px, 5vw, 76px);
+}
+.about-landing h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.65rem, 5.3vw, 5.1rem);
+  letter-spacing: -.045em;
+  line-height: 1.04;
+  text-wrap: balance;
+  margin: 0 0 30px;
+}
+.about-landing img {
+  height: 100%;
+  min-height: 430px;
+  object-position: 38% center;
+}
+.about-landing .button {
+  gap: 14px;
+  font-size: .94rem;
+}
+.about-mission-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+  gap: clamp(20px, 5vw, 70px);
+  width: min(90%, 1120px);
+  margin: clamp(30px, 6vw, 84px) auto;
+  padding: clamp(24px, 4.5vw, 60px);
+  background: #eaf0e3;
+  border-left: 4px solid #789263;
+  border-radius: 0 18px 18px 0;
+}
+.about-mission-panel h2,
+.about-policy h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(1.9rem, 3.8vw, 3.1rem);
+  letter-spacing: -.035em;
+  line-height: 1.12;
+  margin: 0;
+}
+.about-mission-panel p {
+  font-size: clamp(1.12rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  margin: 0;
+  color: #244637;
+}
+.about-policy {
+  width: min(90%, 900px);
+  margin: 0 auto clamp(42px, 7vw, 90px);
+  padding: clamp(24px, 5vw, 64px);
+  border: 1px solid #dce5d8;
+  border-radius: 18px;
+  background: #fffef9;
+  box-shadow: 0 12px 32px #173e350d;
 }
 .about-policy h2 {
-  margin: 2.5rem 0 1rem;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  letter-spacing: -.025em;
-  line-height: 1.2;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #dce5d8;
 }
 .about-policy p {
-  max-width: 72ch;
+  color: #34473d;
   font-size: 1.125rem;
   line-height: 1.75;
+}
+.about-policy p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 760px) {
+  .about-landing,
+  .about-mission-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .about-landing img {
+    min-height: 0;
+    height: clamp(190px, 48vw, 340px);
+  }
+  .about-landing h1 {
+    margin-bottom: 22px;
+  }
+  .about-landing .button {
+    padding-inline: 17px;
+  }
 }
