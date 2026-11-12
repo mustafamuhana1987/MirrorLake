@@ -46,3 +46,8 @@
   font-size: 1.25rem;
   font-weight: 700;
 }
+
+.topbar-home a {
+  display: inline-block;
+  float: none;
+}
