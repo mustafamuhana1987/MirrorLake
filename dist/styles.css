@@ -98,3 +98,21 @@
     align-items: stretch;
   }
 }
+
+.about-policy {
+  max-width: 1050px;
+}
+.about-policy h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+.about-policy h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: -.025em;
+  line-height: 1.2;
+}
+.about-policy p {
+  max-width: 72ch;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
