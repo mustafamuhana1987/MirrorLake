@@ -13,7 +13,7 @@ write('','Your Hudson Valley escape',`<section class="hero"><img class="hero-ima
   <div class="intro-grid">
     <h2>Who We Are</h2>
     <div>
-      <p class="lead">Mirror Lake Retreat exists to partner with churches, ministries, and individual Christians in fulfilling the Great Commission and strengthening the Body of Christ. We pursue this mission through retreats, camps, conferences, special events, and a variety of other gatherings at Mirror Lake, providing opportunities for guests of all ages to grow in faith, deepen relationships, and draw closer to Jesus Christ.</p>
+      <p>Mirror Lake Retreat exists to partner with churches, ministries, and individual Christians in fulfilling the Great Commission and strengthening the Body of Christ. We pursue this mission through retreats, camps, conferences, special events, and a variety of other gatherings at Mirror Lake, providing opportunities for guests of all ages to grow in faith, deepen relationships, and draw closer to Jesus Christ.</p>
       <p>Our highest priority is to honor and glorify our Lord Jesus Christ in everything we do and through every service we provide. We are committed to meeting the needs of our guests with excellence, genuine hospitality, and a spirit of Christian service.</p>
       <p>The Mirror Lake Ministry Team is wholeheartedly committed to serving Jesus Christ by serving others.</p>
       <p>It would be our privilege to host your next retreat, event, or gathering. We look forward to welcoming you to Mirror Lake!</p>
