@@ -63,11 +63,6 @@
 #welcome .intro-grid p:last-child {
   margin-bottom: 0;
 }
-.ribbon.faith-ribbon {
-  gap: clamp(30px, 6vw, 70px);
-  color: #496052;
-  font-size: 1.75rem;
-}
 .ribbon.faith-ribbon span:last-child {
   display: inline;
 }
@@ -84,12 +79,6 @@
 }
 .hero:has(.management-announcement) .hero-content h1 {
   margin: 0;
-}
-.hero-cross {
-  display: inline-block;
-  color: #e9eedb;
-  font-size: .46em;
-  vertical-align: .22em;
 }
 .hero:has(.management-announcement) .hero-actions {
   justify-content: flex-end;
