@@ -130,13 +130,14 @@
 }
 .about-landing h1 {
   margin: 0;
-  max-width: 15ch;
   font-family: Georgia, serif;
-  font-size: clamp(2.5rem, 6vw, 5.1rem);
+  font-size: clamp(1.5rem, 7.2vw, 5.1rem);
   letter-spacing: -.045em;
   line-height: 1.08;
-  text-wrap: balance;
   text-shadow: 0 2px 16px #09271f;
+}
+.about-landing h1 span {
+  white-space: nowrap;
 }
 .about-landing img {
   position: absolute;
