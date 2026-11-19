@@ -264,3 +264,38 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.footer-bottom {
+  align-items: center;
+}
+.footer-partnership {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 680px;
+}
+.footer-partnership img {
+  width: clamp(190px, 21vw, 280px);
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
+}
+.footer-partnership span {
+  max-width: 310px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+@media (max-width: 760px) {
+  .footer-bottom {
+    align-items: flex-start;
+    gap: 22px;
+  }
+  .footer-partnership {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+  .footer-partnership img {
+    width: min(260px, 100%);
+  }
+}
